@@ -13,6 +13,7 @@ The project aims to enhance traffic management by offering advanced notification
 2. **Lane-Specific Vehicle Counting:** Differentiating vehicles in lanes to manage flow at bottlenecks or adjust lane usage dynamically.
 3. **Vehicle Speed Detection:** Estimating vehicle speeds to identify traffic congestion points, aiding in traffic light signal adjustments or diversions.
 4. **Pothole Detection:** Identifying road defects through image segmentation for preventive maintenance.
+5. **Traffic Light Detection:** Detects traffic lights and the signal shown(red/yellow/green) displayed by it.
 
 ## Real-time Analysis
 The system continuously processes video feeds from traffic cameras, providing up-to-date traffic information.
