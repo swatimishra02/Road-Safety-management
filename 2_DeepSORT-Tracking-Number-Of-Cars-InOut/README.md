@@ -7,9 +7,7 @@
 ## Dataset Used
 
 - **Dataset Information:**
-  - Name of Dataset: _[Name of the dataset]_
-  - Dataset Statistics: Contains _[number of images]_ images, widely recognised for its diversity and complexity.
-  - Usage: This dataset is widely used in advanced object detection research and applications due to its comprehensive collection of real-world images.
+Focuses on image processing techniques and doesn't explicitly use a large dataset for training or a pre-trained model for prediction.
 
 ## Model Details
 
