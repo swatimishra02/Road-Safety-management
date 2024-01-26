@@ -30,23 +30,15 @@ YOLOv8 Object Detection with DeepSORT Tracking(ID + Trails)
 
 > ⁠which dataset -> stats of the dataset, how many images etc. and that it’s widely used…
 
-_pls fill_
-
 ### Model Details
-
-> ⁠⁠which model was used and technical details about the model
 
 We have used "YOLOv8" for our project which was officially released on 10th January, 2023 and offers higer accuracy and faster speed compared to the older versions. For instance, the YOLOv8(medium) has a 50.2 mAP score at 1.83 milliseconds on the COCO dataset and A100 TensorRT. YOLO v8 also features a Python package and CLI-based implementation, making it easy to use and develop. YOLOv8 comes in five variants based on the number of parameters – nano(n), small(s), medium(m), large(l), and extra large(x). We can use all the variants for classification, object detection, and segmentation.
 
 ### Problem Statement
 
-> ⁠why the model is useful (i.e. what problem is it solving and how is it benefiting mankind)
-
 The model facilitates real-time vehicle speed detection, instantly alerting authorities to instances of over-speeding or violations of speed limits. This proactive system serves as a crucial preventive measure against daily occurrences of vehicle collisions attributed to high speeds, promoting road safety and averting potential accidents.
 
-### Model Pros...
-
-> ⁠why the particular model selected by us is great (high high accuracy, state of the art, low inference time)
+### Model Pros
 
 Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
 
