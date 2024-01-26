@@ -14,21 +14,23 @@
 ## Model Details
 
 - **Model Used:** YOLO-V8
-  - Technical Details: 
-    - Architecture: _[Provide details about the architecture]_
-    - Efficiency: _[Discuss aspects like model size, speed, etc.]_
-    - Accuracy: _[Provide details on accuracy metrics, if available]_
+We have used "YOLOv8" for our project which was officially released on 10th January, 2023 and offers higer accuracy and faster speed compared to the older versions. For instance, the YOLOv8(medium) has a 50.2 mAP score at 1.83 milliseconds on the COCO dataset and A100 TensorRT. YOLO v8 also features a Python package and CLI-based implementation, making it easy to use and develop. 
+YOLOv8 comes in five variants based on the number of parameters – nano(n), small(s), medium(m), large(l), and extra large(x). We can use all the variants for classification, object detection, and segmentation.  
 
 ## Problem Statement
 
 - **Purpose and Impact:**
-  - The model is designed to detect potholes effectively, addressing a crucial road safety issue.
+  - The model is designed to detect the number of cars going in and out from a particular point effectively, addressing a crucial road safety issue.
   - Its application extends to improving road conditions, thereby benefiting public safety and vehicle maintenance.
 
 ## Model Pros
 
 - **Advantages of Selected Model:**
-  - _[Highlight why YOLOv8 was chosen, focusing on aspects like its state-of-the-art accuracy, low inference time, and other benefits]_
+Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
+
+Quicker speed: YOLOv8 is quicker than earlier versions of YOLO while remaining more accurate. This is the result of several optimisations, including a new backbone network based on EfficientNet.
+
+Improved developer experience: YOLOv8 has several improvements that make it easier to use and customise than prior versions of YOLO. For example, it has a new API that simplifies model training and deployment.
 
 
 ## Steps to run Code
