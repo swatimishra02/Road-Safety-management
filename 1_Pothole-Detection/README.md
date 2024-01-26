@@ -20,7 +20,7 @@ As the model is known to support object detection, instance segmentation, and im
 
 ---
 
-### Model Pros...
+### Model Pros
 
 Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
 
