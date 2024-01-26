@@ -26,6 +26,7 @@ YOLOv8 comes in five variants based on the number of parameters – nano(n), sma
 ## Model Pros
 
 - **Advantages of Selected Model:**
+
 Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
 
 Quicker speed: YOLOv8 is quicker than earlier versions of YOLO while remaining more accurate. This is the result of several optimisations, including a new backbone network based on EfficientNet.
