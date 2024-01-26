@@ -2,14 +2,12 @@
 
 
 ### Dataset Used
-> ⁠which dataset -> stats of the dataset, how many images etc. and that it’s widely used…
 
-_pls fill_
+Pothole images dataset by Roboflow. It has a collection of 655 images of roads with potholes labeled. Using this dataset, potholes in city streets might be automatically identified and categorised, allowing for quicker repair of the worst ones.  
 
 ---
 
 ### Model Details
-> ⁠⁠which model was used and technical details about the model
 
 We have used "YOLOv8" for our project which was officially released on 10th January, 2023 and offers higer accuracy and faster speed compared to the older versions. For instance, the YOLOv8(medium) has a 50.2 mAP score at 1.83 milliseconds on the COCO dataset and A100 TensorRT. YOLO v8 also features a Python package and CLI-based implementation, making it easy to use and develop. 
 YOLOv8 comes in five variants based on the number of parameters – nano(n), small(s), medium(m), large(l), and extra large(x). We can use all the variants for classification, object detection, and segmentation.  
@@ -17,14 +15,12 @@ YOLOv8 comes in five variants based on the number of parameters – nano(n), sma
 ---
 
 ### Problem Statement
-> ⁠why the model is useful (i.e. what problem is it solving and how is it benefiting mankind)
 
 As the model is known to support object detection, instance segmentation, and image classification, it helps in the detection of potholes and give users a heads up as to what is coming next. They can either avoid it and take a new route or adjust their speed accordingly which will help in reducing accidents and maintaining road safety.
 
 ---
 
 ### Model Pros...
-> ⁠why the particular model selected by us is great
 
 Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
 
