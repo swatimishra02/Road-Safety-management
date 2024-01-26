@@ -28,11 +28,11 @@ YOLOv8 Object Detection with DeepSORT Tracking(ID + Trails)
 
 ### Dataset Used
 
-> ⁠which dataset -> stats of the dataset, how many images etc. and that it’s widely used…
+Dataset used is myhaar.xml
 
 ### Model Details
 
-We have used "YOLOv8" for our project which was officially released on 10th January, 2023 and offers higer accuracy and faster speed compared to the older versions. For instance, the YOLOv8(medium) has a 50.2 mAP score at 1.83 milliseconds on the COCO dataset and A100 TensorRT. YOLO v8 also features a Python package and CLI-based implementation, making it easy to use and develop. YOLOv8 comes in five variants based on the number of parameters – nano(n), small(s), medium(m), large(l), and extra large(x). We can use all the variants for classification, object detection, and segmentation.
+We have used "dlib.correlation_tracker" for our project. This object lets you track the position of an object as it moves from frame to frame in a video sequence. To use it, you give the correlation_tracker the bounding box of the object you want to track in the current video frame. Then it will identify the location of the object in subsequent frames.
 
 ### Problem Statement
 
@@ -40,11 +40,17 @@ The model facilitates real-time vehicle speed detection, instantly alerting auth
 
 ### Model Pros
 
-Improved accuracy: YOLOv8 delivers state-of-the-art results on a range of object identification benchmarks. It outperforms prior versions of YOLO, particularly for tiny and difficult-to-detect objects.
+1. Robust Tracking: The dlib correlation tracker is renowned for its steady performance in tracking objects across frames, which qualifies it for real-time use.
+   
+2. Efficiency: Its computational efficiency makes real-time tracking possible even on devices with limited resources.
 
-Quicker speed: YOLOv8 is quicker than earlier versions of YOLO while remaining more accurate. This is the result of several optimisations, including a new backbone network based on EfficientNet.
+3. Adaptability: The tracker ensures dependable tracking in a variety of situations by adjusting effectively to changes in the monitored object's size, orientation, and appearance.
 
-Improved developer experience: YOLOv8 has several improvements that make it easier to use and customise than prior versions of YOLO. For example, it has a new API that simplifies model training and deployment.
+4. Ease of Use: Researchers and developers may easily include the correlation tracker and other features of the dlib library into their work.
+
+5. Multi-Object Tracking: It may be expanded to accommodate situations in which a video stream has to monitor several objects at once.
+
+6. Open Source: Dlib is an object tracking task solution that is transparent and easily customisable. It is an open-source library.
 
 ## How to run project?
 
