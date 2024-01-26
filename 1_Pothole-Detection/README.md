@@ -3,7 +3,7 @@
 
 ### Dataset Used
 
-Pothole images dataset by Roboflow. It has a collection of 655 images of roads with potholes labeled. Using this dataset, potholes in city streets might be automatically identified and categorised, allowing for quicker repair of the worst ones.  
+Pothole images dataset by COCO. The COCO dataset primarily includes images with object annotations across 80 object categories, such as people, cars, and animals. Using this dataset, potholes in city streets might be automatically identified and categorised, allowing for quicker repair of the worst ones.  
 
 ---
 
@@ -29,7 +29,6 @@ Quicker speed: YOLOv8 is quicker than earlier versions of YOLO while remaining m
 Improved developer experience: YOLOv8 has several improvements that make it easier to use and customise than prior versions of YOLO. For example, it has a new API that simplifies model training and deployment.
 
 ---
-
 
 ## Steps to run Code
 1. Clone the repository.
