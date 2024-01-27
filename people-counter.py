@@ -5,24 +5,95 @@ import math
 import time
 
 # ...
-cap = cv2.VideoCapture("../Videos/people.mp4")  # For Video
+cap = cv2.VideoCapture("CrowdVideo.mp4")  # For Video
 # cap = cv2.VideoCapture(0)
-webcam_url = 'http://192.168.159.233:8080'
+# webcam_url = 'http://192.168.159.233:8080'
 # cap = cv2.VideoCapture(webcam_url)
 
-model = YOLO("../Yolo-Weights/yolov8n.pt")
+model = YOLO("yolov8n.pt")
 
-classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
-              "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
-              "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
-              "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
-              "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
-              "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
-              "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
-              "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
-              "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
-              "teddy bear", "hair drier", "toothbrush"
-              ]
+classNames = [
+    "person",
+    "bicycle",
+    "car",
+    "motorbike",
+    "aeroplane",
+    "bus",
+    "train",
+    "truck",
+    "boat",
+    "traffic light",
+    "fire hydrant",
+    "stop sign",
+    "parking meter",
+    "bench",
+    "bird",
+    "cat",
+    "dog",
+    "horse",
+    "sheep",
+    "cow",
+    "elephant",
+    "bear",
+    "zebra",
+    "giraffe",
+    "backpack",
+    "umbrella",
+    "handbag",
+    "tie",
+    "suitcase",
+    "frisbee",
+    "skis",
+    "snowboard",
+    "sports ball",
+    "kite",
+    "baseball bat",
+    "baseball glove",
+    "skateboard",
+    "surfboard",
+    "tennis racket",
+    "bottle",
+    "wine glass",
+    "cup",
+    "fork",
+    "knife",
+    "spoon",
+    "bowl",
+    "banana",
+    "apple",
+    "sandwich",
+    "orange",
+    "broccoli",
+    "carrot",
+    "hot dog",
+    "pizza",
+    "donut",
+    "cake",
+    "chair",
+    "sofa",
+    "pottedplant",
+    "bed",
+    "diningtable",
+    "toilet",
+    "tvmonitor",
+    "laptop",
+    "mouse",
+    "remote",
+    "keyboard",
+    "cell phone",
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush",
+]
 
 prev_frame_time = 0
 new_frame_time = 0
@@ -32,7 +103,7 @@ while True:
     success, img = cap.read()
     results = model(img, stream=True)
 
-    #counter to keep track of the number of bounding boxes
+    # counter to keep track of the number of bounding boxes
     box_count = 0
 
     for r in results:
@@ -49,11 +120,25 @@ while True:
 
             cls = int(box.cls[0])
 
-            cvzone.putTextRect(img, f'{classNames[cls]} {conf}', (max(0, x1), max(35, y1)), scale=1, thickness=1)
+            cvzone.putTextRect(
+                img,
+                f"{classNames[cls]} {conf}",
+                (max(0, x1), max(35, y1)),
+                scale=1,
+                thickness=1,
+            )
 
             box_count += 1
 
-    cv2.putText(img, f'People: {box_count}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.putText(
+        img,
+        f"People: {box_count}",
+        (10, 30),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        1,
+        (0, 255, 0),
+        2,
+    )
 
     fps = 1 / (new_frame_time - prev_frame_time)
     prev_frame_time = new_frame_time
