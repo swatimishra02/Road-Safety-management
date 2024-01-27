@@ -35,11 +35,12 @@ Improved developer experience: YOLOv8 has several improvements that make it easi
 ```
 git clone https://github.com/annimukherjee/Road-Safety-ModelZoo/tree/main
 ```
+
 2. Goto the cloned folder.
 ```
 cd 1_Pothole-Detection
-
 ```
+
 3. Upgrade pip with the mentioned command below.
 ```
 pip install --upgrade pip
