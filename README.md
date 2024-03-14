@@ -1,5 +1,10 @@
 # AI/ML Hackathon on Road Safety
-
+## TEAM MEMBERS 
+    1. ABHIJEET KUMAR 
+    2. SWATI MISHRA
+    3. SAYAK HATUI
+    4. ANIRUDDHA MUKHERJEE
+    5. AAKRITI ROY
 ## Problem Statement
 **Enhancing Road Safety with AI/ML for Traffic Flow Optimization.**
 
